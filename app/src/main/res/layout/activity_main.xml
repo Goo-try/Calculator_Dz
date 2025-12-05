@@ -12,6 +12,7 @@
     <EditText
         android:id="@+id/editText"
         android:textSize="40pt"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,16 +39,24 @@
                 android:layout_margin="1dp"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
-                android:layout_weight="4"
+                android:layout_weight="1"
                 android:text="AC" />
 
             <Button
-                android:id="@+id/buttonPercent"
+                android:id="@+id/buttonopenBracket"
                 android:layout_margin="1dp"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:layout_weight="1"
-                android:text="%" />
+                android:text="(" />
+
+            <Button
+                android:id="@+id/buttoncloseBracket"
+                android:layout_margin="1dp"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:text=")" />
 
             <Button
                 android:id="@+id/buttonDivide"
@@ -226,6 +235,7 @@
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:layout_weight="1"
+
                 android:text="=" />
 
 
