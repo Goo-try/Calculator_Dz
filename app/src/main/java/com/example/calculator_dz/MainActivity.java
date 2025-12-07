@@ -17,9 +17,9 @@ import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView EditText;
+    TextView edit_Text, solution_Text;
     MaterialButton button_1, button_2, button_3, button_4, button_5, button_6, button_7, button_8, button_9, button_0;
-    MaterialButton button_AC, buttonOpen_Bracket, buttonClose_Bracket, button_Divide, button_Multiply, button_Minus, button_Plus, buttonPlus_Minus, button_Dot, button_Equal;
+    MaterialButton button_AC, buttonOpen_Bracket, buttonClose_Bracket, button_Divide, button_Multiply, button_Minus, button_Plus, button_C, button_Dot, button_Equal;
 
 
 
@@ -29,7 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        EditText = findViewById(R.id.editText);
+        edit_Text = findViewById(R.id.editText);
+        solution_Text = findViewById(R.id.solutionText);
+
+
 
         assignId(button_1, R.id.button1);
         assignId(button_2, R.id.button2);
@@ -48,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(button_Multiply, R.id.buttonMultiply);
         assignId(button_Minus, R.id.buttonMinus);
         assignId(button_Plus, R.id.buttonPlus);
-        assignId(buttonPlus_Minus, R.id.buttonPlusMinus);
+        assignId(button_C, R.id.buttonC);
         assignId(button_Dot, R.id.buttonDot);
         assignId(button_Equal, R.id.buttonEqual);
 
@@ -74,6 +77,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         MaterialButton button = (MaterialButton) view;
         String buttonText = button.getText().toString();
-        EditText.setText(buttonText);
+        String dataCalculate = solution_Text.getText().toString();
+
+        if(buttonText.equals("AC")){
+            solution_Text.setText("0");
+            return;
+        }
+
+        if(buttonText.equals("C")){
+            edit_Text.setText("0");
+            return;
+        }
+
+
+        dataCalculate = dataCalculate+buttonText;
+
+        solution_Text.setText(dataCalculate);
+
+        edit_Text.setText(buttonText);
+
+
+
     }
 }

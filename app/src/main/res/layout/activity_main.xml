@@ -8,11 +8,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/solutionText"
         android:textSize="40pt"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -21,6 +19,21 @@
         android:gravity="right|center"
         android:layout_weight="1"
         android:text="0" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:textSize="40pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:gravity="right|center"
+        android:layout_weight="1"
+        android:text="0" />
+
+
+
 
     <TableLayout
         android:layout_width="match_parent"
@@ -206,12 +219,12 @@
 
 
             <Button
-                android:id="@+id/buttonPlusMinus"
+                android:id="@+id/buttonC"
                 android:layout_margin="1dp"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:layout_weight="1"
-                android:text="+/-" />
+                android:text="C" />
 
             <Button
                 android:id="@+id/button0"
