@@ -34,6 +34,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.exp4j)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

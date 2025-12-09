@@ -2,17 +2,14 @@ package com.example.calculator_dz;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-
-
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -20,7 +17,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView edit_Text, solution_Text;
     MaterialButton button_1, button_2, button_3, button_4, button_5, button_6, button_7, button_8, button_9, button_0;
     MaterialButton button_AC, buttonOpen_Bracket, buttonClose_Bracket, button_Divide, button_Multiply, button_Minus, button_Plus, button_C, button_Dot, button_Equal;
-
 
 
     @Override
@@ -31,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         edit_Text = findViewById(R.id.editText);
         solution_Text = findViewById(R.id.solutionText);
-
 
 
         assignId(button_1, R.id.button1);
@@ -89,6 +84,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
+        if(buttonText.equals("=")){
+            String result = getResult(dataCalculate);
+            edit_Text.setText(result);
+            solution_Text.setText(result);
+            return;
+        }
+
 
         dataCalculate = dataCalculate+buttonText;
 
@@ -97,6 +99,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edit_Text.setText(buttonText);
 
 
-
     }
+
+    String getResult(String data) {
+        Expression expression = new ExpressionBuilder(data).build();
+        double result = expression.evaluate();
+        return String.valueOf(result);
+    }
+
 }
