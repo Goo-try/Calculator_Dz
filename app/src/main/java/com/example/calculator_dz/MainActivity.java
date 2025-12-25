@@ -14,7 +14,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView edit_Text, solution_Text;
+    TextView resultText, solutionText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        edit_Text = findViewById(R.id.editText);
-        solution_Text = findViewById(R.id.solutionText);
+        resultText = findViewById(R.id.result);
+        solutionText = findViewById(R.id.solutionText);
 
 
         assignId(R.id.button1);
@@ -67,30 +67,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         MaterialButton button = (MaterialButton) view;
         String buttonText = button.getText().toString();
-        String dataCalculate = solution_Text.getText().toString();
+        String dataCalculate = solutionText.getText().toString();
 
         if(buttonText.equals("AC")){
-            solution_Text.setText("");
+            solutionText.setText("");
             return;
         }
 
         if(buttonText.equals("C")){
-            edit_Text.setText("0");
+            resultText.setText("0");
             return;
         }
 
         if(buttonText.equals("=")){
             String result = getResult(dataCalculate);
-            edit_Text.setText(result);
+            resultText.setText(result);
             return;
         }
 
 
         dataCalculate = dataCalculate+buttonText;
 
-        solution_Text.setText(dataCalculate);
+        solutionText.setText(dataCalculate);
 
-        edit_Text.setText(buttonText);
+        resultText.setText(buttonText);
 
     }
 

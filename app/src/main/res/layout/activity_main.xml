@@ -11,7 +11,7 @@
     tools:context=".MainActivity">
 
         <include
-            layout="@layout/text_view" />
+            layout="@layout/text_view1" />
 
         <include
             layout="@layout/text_view2" />
