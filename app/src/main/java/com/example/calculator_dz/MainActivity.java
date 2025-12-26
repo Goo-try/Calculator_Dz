@@ -6,6 +6,7 @@ import android.widget.TextView;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -25,6 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultText = findViewById(R.id.result);
         solutionText = findViewById(R.id.solutionText);
 
+        if (savedInstanceState != null) {
+            String savedSolution = savedInstanceState.getString("solution", "");
+            String savedResult = savedInstanceState.getString("result", "0");
+            solutionText.setText(savedSolution);
+            resultText.setText(savedResult);
+        }
 
         assignId(R.id.button1);
         assignId(R.id.button2);
@@ -47,21 +54,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(R.id.buttonDot);
         assignId(R.id.buttonEqual);
 
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (view, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
         });
+    }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("solution", solutionText.getText().toString());
+        outState.putString("result", resultText.getText().toString());
     }
 
     void assignId(int id) {
         MaterialButton btn = findViewById(id);
         btn.setOnClickListener(this);
     }
-
 
     @Override
     public void onClick(View view) {
@@ -85,13 +95,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-
         dataCalculate = dataCalculate+buttonText;
 
         solutionText.setText(dataCalculate);
 
         resultText.setText(buttonText);
-
     }
 
     String getResult(String data) {
@@ -103,5 +111,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return "Error";
         }
     }
-
 }

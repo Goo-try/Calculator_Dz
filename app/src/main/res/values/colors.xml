@@ -2,12 +2,12 @@
 <resources>
 
     <color name="black">#424242</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="primary">#E3F2FD</color>
-    <color name="orange">#FFB74D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary">#F5FEFF</color>
+    <color name="orange">#03A9F4</color>
     <color name="blue">#81D4FA</color>
-    <color name="beige">#FFCDA0</color>
-    <color name="green">#9BF7A6</color>
+    <color name="beige">#03A9F4</color>
+    <color name="green">#2EE282</color>
     <color name="red">#FFA5A0</color>
 
 </resources>
