@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/butL"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    >
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAC"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/red"
+            android:layout_marginEnd="8dp"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="AC"
+            android:textColor="@color/black"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="1"
+            android:textColor="@color/black"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="2"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="3"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDivide"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="/"
+            android:textColor="@color/white"/>
+
+
+
+
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonOpenBracket"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="("
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="4"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button5"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="5"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button6"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="6"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMultiply"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="*"
+            android:textColor="@color/white"/>
+
+
+
+
+
+
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCloseBracket"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text=")"
+            android:textColor="@color/white"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button7"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="7"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button8"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="8"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button9"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="9"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonMinus"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="@color/white"/>
+
+
+
+
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonC"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/red"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="C"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDot"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+            android:layout_marginEnd="8dp"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="."
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button0"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEqual"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/green"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="="
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonPlus"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue1"
+            android:layout_width="30pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:text="+"
+            android:textColor="@color/white"/>
+
+
+
+
+
+
+
+
+
+
+
+    </TableRow>
+
+
+
+
+
+
+</TableLayout>

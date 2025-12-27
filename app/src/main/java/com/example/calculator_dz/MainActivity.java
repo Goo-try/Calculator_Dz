@@ -12,6 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
+import android.app.AlertDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -91,7 +92,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(buttonText.equals("=")){
             String result = getResult(dataCalculate);
-            resultText.setText(result);
+            if (result.equals("DIV_BY_ZERO")) {
+                showDivisionError();
+            } else {
+                resultText.setText(result);
+            }
             return;
         }
 
@@ -100,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         solutionText.setText(dataCalculate);
 
         resultText.setText(buttonText);
+
     }
 
     String getResult(String data) {
@@ -108,7 +114,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             double result = expression.evaluate();
             return String.valueOf(result);
         } catch (Exception e) {
-            return "Error";
+            if (e instanceof ArithmeticException) {
+                return "DIV_BY_ZERO";
+            } else {
+                return "Error";
+            }
         }
     }
+
+
+    private void showDivisionError() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Ошибка");
+        builder.setMessage("Нельзя делить на ноль!");
+        builder.setPositiveButton("OK", null);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
+
+
 }
