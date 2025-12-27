@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculatrice</string>
+    <string name="division_error_title">Erreur</string>
+    <string name="division_error_message">Impossible de diviser par zéro!</string>
+</resources>

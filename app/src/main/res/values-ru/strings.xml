@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="division_error_title">Ошибка</string>
+    <string name="division_error_message">На ноль делить нельзя!</string>
+</resources>

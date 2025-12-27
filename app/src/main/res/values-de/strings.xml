@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rechner</string>
+    <string name="division_error_title">Fehler</string>
+    <string name="division_error_message">Division durch Null nicht möglich!</string>
+</resources>

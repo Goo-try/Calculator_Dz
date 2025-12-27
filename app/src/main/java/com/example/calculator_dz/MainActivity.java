@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void showDivisionError() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Ошибка");
-        builder.setMessage("Нельзя делить на ноль!");
+        builder.setTitle(getString(R.string.division_error_title));
+        builder.setMessage(getString(R.string.division_error_message));
         builder.setPositiveButton("OK", null);
         AlertDialog dialog = builder.create();
         dialog.show();
