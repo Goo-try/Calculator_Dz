@@ -3,5 +3,14 @@
     <style name="Base.Theme.Calculator_Dz" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
     </style>
+
+    <color name="primary">#000000</color>
+    <color name="black">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#03A9F4</color>
+    <color name="blue1">#1567bd</color>
+    <color name="green">#00a86b</color>
+
 </resources>

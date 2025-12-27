@@ -30,7 +30,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonOpenBracket"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/beige"
+            android:backgroundTint="@color/blue1"
             android:layout_marginEnd="8dp"
             android:layout_width="30pt"
             android:layout_height="30pt"
@@ -42,7 +42,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonCloseBracket"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/beige"
+            android:backgroundTint="@color/blue1"
             android:layout_marginEnd="8dp"
             android:layout_width="30pt"
             android:layout_height="30pt"
@@ -54,7 +54,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDivide"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/blue1"
             android:layout_width="30pt"
             android:layout_height="30pt"
             android:layout_weight="1"
@@ -112,7 +112,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMultiply"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/blue1"
             android:layout_width="30pt"
             android:layout_height="30pt"
             android:layout_weight="1"
@@ -169,7 +169,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMinus"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/blue1"
 
             android:layout_width="30pt"
             android:layout_height="30pt"
@@ -228,7 +228,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPlus"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/blue1"
             android:layout_width="30pt"
             android:layout_height="30pt"
             android:layout_weight="1"
@@ -274,7 +274,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDot"
             app:cornerRadius="10dp"
-            android:backgroundTint="@color/beige"
+            android:backgroundTint="@color/blue1"
             android:layout_marginEnd="8dp"
             android:layout_width="30pt"
             android:layout_height="30pt"
